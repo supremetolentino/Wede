@@ -1,6 +1,8 @@
 /* fUENTES  */
-
-p{
+p {
+  font-family:"Dancing Script";
+}
+a{
   font-family:"Dancing Script";
 }
 h1{
@@ -23,55 +25,47 @@ h1{
 }
 
 body{
-  background-color: white;
+  background-color: #02010a;
 }
 #Contenido{
-  width: 900px;
+  width: 1300px;
   height: auto;
   display:  block;
   margin: auto;
-background-color: #02010a;
-transition: background 1s;
-animation: miAnimacion 3s;
+  background-color: #02010a;
+   transition: background 1s;
+  animation: miAnimacion 3s; 
 }
 #Encabezado{
   background-color: #5b7989;
   width: 100%;
   height: 100px;
-  border-radius: 10px;
-  display: flex ;
-  margin: auto;
+  border-radius: 10px 10px 0 0  ;
+  display: flex;
+  margin: 20px auto;
 }
 h1{
   color: white;
   text-shadow: 2px 2px 2px #02010a;
-  padding-left: 50px;
+  padding-left: 100px;
 }
 
-nav{
-  width: 250px;
-  height: auto;
-  padding-top: 25px;
-  padding-left: 170px;
+.menu{
+
+  padding-top: 20px;
+  padding-left: 50%;;
 }
 
- #Menu li{
-   display: inline-block;
- }
-
-ul.menu{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-    border-radius: 5px;
-  }
-ul.menu ul {
-    background: #444;
-    display: none;
-    position: absolute;
-    left: 0; top: 100%;
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  border-radius: 5px;
+}
+.menu li {
+  display: inline-block;
 }
 li a {
   display: block;
@@ -83,21 +77,43 @@ li a {
 li a:hover {
   background-color: #111111;
 }
-
-/* Seccion */
-section{
+section {
   width: 100%;
-  height: auto;
-  background-color:  #82c3a6;
+  background-color: #82c3a6;
   margin-top: 10px;
-
+  display: block;
+  margin: auto;
+ }
+ section figure img{
+   width: 70%;
  }
 
-#sectimg {
-  width: 70%;
+section img{
+  width: 30%;
+  display: block;
+  margin: 20px auto;
+  padding: 2px;
+
+
+}
+
+.paseimg {
+  flex-wrap: wrap;
+}
+
+.reseimg{
+  flex-wrap: wrap;
+}
+
+footer{
+  width: 100%;
   height: auto;
-  display:  block;
-  margin: auto;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  align-items: center;
+  column-count: 4;
+  display:block;
+
 }
 
 @keyframes miAnimacion {
@@ -122,7 +138,7 @@ div  {
 
 }
 
-.sectimg1 img{
+.imgsect2 {
   margin: 1px;
   width: 400px;
   border: 1px;
@@ -130,16 +146,7 @@ div  {
   display: inline-block;
   margin: auto;
 }
-.sectimg2 {
-  width: 100%;
-  height: auto;
-  border: 10px;
-  background-color: #d5c75f;
-  display:inline-flex;
-  margin-top: 10px;
-  margin: 20px;
-}
-.hijo1{
+.imgsect2{
 position: relative;
 transition: all 1s ease;
 transform: perspective(600px);
@@ -147,28 +154,19 @@ transform-origin: 100% 50%;
 transform-style: preserve-3d;
 }
 
-.hijo1:hover{
+.imgsect1:hover{
 /* transform: perspective(600px) rotateY(-180deg) translateX(100%); */
 transform: rotate(10deg);
 border: 2px;
  box-shadow: 0 4px 8px 0 #82c3a6, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.hijo2:hover{
+.imgsect2:hover{
   transform:  translate(15px, -20px);
   border: 2px;
   box-shadow: 5px 10px  5px 10px #82c3a6;
 }
 
-footer{
-  width: 100%;
-  height: auto;
-  background-color: #C6d5c5;
-  border-radius: 0 0 10px 10px;
-  align-items: center;
-  column-count: 4;
-  display:block;
 
-}
 .lor1, .lor2,.lor3, .lor4 {
   /* background-color: gray; */
 padding: 15px;
@@ -182,29 +180,28 @@ color: black;
   border-radius: 220px;
 }
 
-img.psimg1:hover {
+.paseimg img.psimg1:hover {
   filter: blur(5px);
 }
-
-img.psimg2:hover,img.psimg4:hover,img.psimg6:hover{
+.paseimg img.psimg2:hover,img.psimg4:hover,img.psimg6:hover{
 filter: grayscale(100%);
 }
-img.psimg3:hover{
+.paseimg img.psimg3:hover{
   filter: sepia(90%);
 }
-img.psimg11 {
+
+
+.reseimg img.psimg1 {
   filter: blur(5px);
 }
-
-img.psimg22,img.psimg44,img.psimg66{
+.reseimg img.psimg2,img.psimg4,img.psimg6{
 filter: grayscale(100%);
 }
-img.psimg33{
+.reseimg img.psimg3{
   filter: sepia(90%);
 }
 img{
-  border: 2px;
-  box-shadow: 5px 10px  5px 10px #02010a;
+box-shadow: 2px 2px 2px #02010a;
 }
 img.footim{
 
@@ -232,38 +229,57 @@ section.Paisecimg1 img{
   margin: auto;
 
 }
+
+
       @media screen and (max-width:1124px) {
-   h1{
-    color: blue;
-  }
-  #Encabezado{
-    display: inline-table;
-    margin: auto;
-    text-align: center;
-  }
-  #Menu{
-    padding-left: 40%;
-    padding-top: 2px;
-  }
-  #sectimg{
-    width: 100%;
-    height: auto;
-  }
-  .sectimg2 {
-    width: 100%;
-    height: auto;
-    background-color: #d5c75f;
-  }
-  .hijo1 , .hijo2{
-    width: 100%;
-    height: auto;
+        #Contenido{
+          width: 100%;
+        }
+        section{
+          width: 100%;
+        }
+        section figure img{
+          width: 90%;
+        }
+   div {
+     display: inline-block;
+     width: 100%;
+   }
+   div img {
+     width: 90%;
+
+   }
+   .imgsect img{
+     width: 90%;
+     margin: 20px;
+     border: 20px;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+
+
+
+
+    }
+
+        #Encabezado{
+          width: 100%;
+          display: inline-table;
+          margin: auto;
+          text-align: center;
+
+        }
+
+        img{
+          width: 100%;
+          height: auto;
+        }
+  .menu ul{
+    position: relative;
+    top: -20px; left: -200px;
   }
 
-  #Contenido{
-    width: 100%;
-    height: auto;
-    background-color: white;
-  }
+
 
   #Pacontenimg1{
     background-color: red;
@@ -275,105 +291,12 @@ section.Paisecimg1 img{
     display: block;
     margin:auto;
     padding: 20px;
+    box-shadow: 2px 2px 2px #02010a;
 
   }
-
-.Paisecimg1 img.psimg1{
-  width: 95%;
-  height: auto;
-
-}
-.Paisecimg1 img.psimg2{
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg3{
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg4{
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg5{
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg6  {
-  width: 95%;
-  height: auto;
-}
-
-.Paisecimg1 img.psimg1{
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg2{
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg3{
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg4{
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg5{
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg11  {
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg22  {
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg33  {
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg44  {
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg55  {
-  width: 95%;
-  height: auto;
-}
-.Paisecimg1 img.psimg66  {
-  width: 95%;
-  height: auto;
-}
-
 footer{
         column-count: 1;
         display:block;
         }
-  /* section .pvs{
-    width: 100%;
-    height: auto;
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
-  }
-  .pvs {
-    width: 100%;
-    height: auto;
-  }
-  .pvs img {
-    width: 90%;
-    height: auto;
-    display: block;
-    margin:auto;
-  }
-
-  section.pvs img {
-    width: 80%;
-    height: auto; */
-
   }
 }
