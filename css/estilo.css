@@ -9,6 +9,13 @@ h1{
   font-family:"Dancing Script";
 }
 
+.caja {
+font-family: sans-serif;
+font-size: 18px;
+font-weight: 400;
+color: #ffffff;
+background:#ee0467 }
+
 /* Animacion */
 
 @keyframes miAnimacion {
@@ -33,16 +40,16 @@ body{
   display:  block;
   margin: auto;
   background-color: #02010a;
-   transition: background 1s;
-  animation: miAnimacion 3s; 
+ transition: background 1s;
+  animation: miAnimacion 3s;
 }
 #Encabezado{
   background-color: #5b7989;
   width: 100%;
   height: 100px;
   border-radius: 10px 10px 0 0  ;
-  display: flex;
   margin: 20px auto;
+  padding: 2px;
 }
 h1{
   color: white;
@@ -51,9 +58,10 @@ h1{
 }
 
 .menu{
-
-  padding-top: 20px;
-  padding-left: 50%;;
+  position: relative ;
+  top: -50px;
+  float: right;
+  padding-right: 10%;
 }
 
 ul{
@@ -191,13 +199,13 @@ filter: grayscale(100%);
 }
 
 
-.reseimg img.psimg1 {
+.reseimg img.rsimg1 {
   filter: blur(5px);
 }
-.reseimg img.psimg2,img.psimg4,img.psimg6{
+.reseimg img.rsimg2,img.rsimg4,img.rsimg6{
 filter: grayscale(100%);
 }
-.reseimg img.psimg3{
+.reseimg img.rsimg3{
   filter: sepia(90%);
 }
 img{
@@ -231,7 +239,7 @@ section.Paisecimg1 img{
 }
 
 
-      @media screen and (max-width:1124px) {
+      @media screen and (max-width:1000px) {
         #Contenido{
           width: 100%;
         }
@@ -267,8 +275,7 @@ section.Paisecimg1 img{
           display: inline-table;
           margin: auto;
           text-align: center;
-
-        }
+          }
 
         img{
           width: 100%;
@@ -276,7 +283,8 @@ section.Paisecimg1 img{
         }
   .menu ul{
     position: relative;
-    top: -20px; left: -200px;
+    top: 45px; right: 200px;
+    position: relative ;
   }
 
 
